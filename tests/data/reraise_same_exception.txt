@@ -1,1 +1,1 @@
-reraise_same_exception.py:4:5: R101 Use bare raise in except handler.
+reraise_same_exception.py:4:5: R101 use bare raise in except handler
