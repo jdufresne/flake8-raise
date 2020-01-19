@@ -1,0 +1,1 @@
+raise_without_from.py:4:5: R100 raise in except handler without from.
