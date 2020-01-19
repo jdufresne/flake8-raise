@@ -9,8 +9,8 @@ class RaiseStatementChecker:
     name = "flake8-raise"
     version = "0.0.4"
     text = {
-        "R100": "R100 raise in except handler without from.",
-        "R101": "R101 Use bare raise in except handler.",
+        "R100": "R100 raise in except handler without from",
+        "R101": "R101 use bare raise in except handler",
     }
 
     def __init__(self, tree, filename):

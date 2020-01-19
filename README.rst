@@ -29,15 +29,15 @@ Rules
 ==== ====
 Code Rule
 ==== ====
-R100 raise in except handler without from.
-R101 Use bare raise in except handler.
+R100 raise in except handler without from
+R101 use bare raise in except handler
 ==== ====
 
 Examples
 --------
 
-R100 raise in except handler without from.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+R100 raise in except handler without from
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: py
 
@@ -61,8 +61,8 @@ To fix, change to:
     except KeyError as e:
         raise MyException from e
 
-R101 Use bare raise in except handler.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+R101 use bare raise in except handler
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: py
 
