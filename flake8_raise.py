@@ -3,7 +3,7 @@ import ast
 
 class RaiseStatementChecker:
     name = "flake8-raise"
-    version = "0.0.1"
+    version = "0.0.2"
     text = "R100 raise in except handler without from."
 
     def __init__(self, tree, filename):
