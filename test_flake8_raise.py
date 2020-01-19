@@ -188,3 +188,18 @@ def test_nested_reraise_outer(flake8dir):
     )
     result = flake8dir.run_flake8()
     assert result.out_lines == []
+
+
+def test_reraise_same_exception(flake8dir):
+    flake8dir.make_example_py(
+        """
+        try:
+            pass
+        except ValueError as e:
+            raise e
+        """
+    )
+    result = flake8dir.run_flake8()
+    assert result.out_lines == [
+        "./example.py:4:5: R101 Use bare raise in except handler."
+    ]

@@ -30,12 +30,14 @@ Rules
 Code Rule
 ==== ====
 R100 raise in except handler without from.
+R101 Use bare raise in except handler.
 ==== ====
 
 Examples
 --------
 
-The following example:
+R100 raise in except handler without from.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: py
 
@@ -44,13 +46,13 @@ The following example:
     except KeyError:
         raise MyException
 
-Will result in the flake8 error:
+Will result in the error:
 
 .. code-block:: text
 
     R100 raise in except handler without from.
 
-To fix, change the code to:
+To fix, change to:
 
 .. code-block:: py
 
@@ -58,3 +60,28 @@ To fix, change the code to:
         foo['bar']
     except KeyError as e:
         raise MyException from e
+
+R101 Use bare raise in except handler.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: py
+
+    try:
+        foo["bar"]
+    except KeyError as e:
+        raise e
+
+Will result in the error:
+
+.. code-block:: text
+
+    R101 Use bare raise in except handler.
+
+To fix, change to:
+
+.. code-block:: py
+
+    try:
+        foo['bar']
+    except KeyError:
+        raise

@@ -2,6 +2,11 @@
 Changelog
 =========
 
+UNRELEASED
+----------
+
+- Added "R101 Use bare raise in except handler" rule.
+
 0.0.3 (2020-01-19)
 ------------------
 
