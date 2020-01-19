@@ -7,7 +7,7 @@ class Context(list):
 
 class RaiseStatementChecker:
     name = "flake8-raise"
-    version = "0.0.3"
+    version = "0.0.4"
     text = {
         "R100": "R100 raise in except handler without from.",
         "R101": "R101 Use bare raise in except handler.",

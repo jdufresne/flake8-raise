@@ -2,10 +2,11 @@
 Changelog
 =========
 
-UNRELEASED
-----------
+0.0.4 (2020-01-19)
+------------------
 
 - Added "R101 Use bare raise in except handler" rule.
+- Restructured test suite to reduce boilerplate.
 
 0.0.3 (2020-01-19)
 ------------------

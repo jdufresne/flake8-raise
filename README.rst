@@ -21,7 +21,7 @@ installed plugins:
 .. code-block:: sh
 
     $ flake8 --version
-    3.7.9 (flake8-raise: 0.0.3, mccabe: 0.6.1, pycodestyle: 2.5.0, pyflakes: 2.1.1) CPython 3.8.1 on Linux
+    3.7.9 (flake8-raise: 0.0.4, mccabe: 0.6.1, pycodestyle: 2.5.0, pyflakes: 2.1.1) CPython 3.8.1 on Linux
 
 Rules
 -----
