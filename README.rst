@@ -46,7 +46,7 @@ The following example:
 
 Will result in the flake8 error:
 
-.. code-block:: plain
+.. code-block:: text
 
     R100 raise in except handler without from.
 
