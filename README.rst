@@ -51,7 +51,7 @@ Will result in the flake8 error:
 
 To fix, change the code to:
 
-.. code-block::
+.. code-block:: py
 
     try:
         foo['bar']
