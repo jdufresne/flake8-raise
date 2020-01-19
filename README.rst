@@ -30,6 +30,7 @@ Rules
 Code Rule
 ==== ====
 R100 raise in except handler without from.
+==== ====
 
 Examples
 --------
