@@ -2,6 +2,12 @@
 Changelog
 =========
 
+UNRELEASED
+----------
+
+- Include ``CHANGELOG.rst``, ``LICENSE``, ``tox.ini``, and ``tests`` in the
+  source distribution.
+
 0.0.4 (2020-01-19)
 ------------------
 
