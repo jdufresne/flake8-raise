@@ -11,6 +11,7 @@ UNRELEASED
   ``except`` handlers.
 - Changed version string use ``importlib.metadata``. Requires the dependency on
   importlib-metadata for Python < 3.8.
+- Added "R102 unnecessary parentheses on raised exception" rule.
 
 0.0.4 (2020-01-19)
 ------------------

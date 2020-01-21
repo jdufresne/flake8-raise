@@ -1,0 +1,1 @@
+raise_with_empty_parentheses.py:1:1: R102 unnecessary parentheses on raised exception
