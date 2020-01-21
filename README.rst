@@ -31,6 +31,7 @@ Code Rule
 ==== ====
 R100 ``raise`` in ``except`` handler without ``from``
 R101 use bare ``raise`` in ``except`` handler
+R102 unnecessary parentheses on raised exception
 ==== ====
 
 Examples
@@ -85,3 +86,22 @@ To fix, change to:
         foo['bar']
     except KeyError:
         raise
+
+R102 unnecessary parentheses on raised exception
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: py
+
+    raise TypeError()
+
+Will result in the error:
+
+.. code-block:: text
+
+    R102 unnecessary parentheses on raised exception
+
+To fix, change to:
+
+.. code-block:: py
+
+    raise TypeError
