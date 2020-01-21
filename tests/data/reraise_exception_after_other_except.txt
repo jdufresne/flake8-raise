@@ -1,0 +1,1 @@
+reraise_exception_after_other_except.py:8:5: R101 use bare raise in except handler
