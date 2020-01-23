@@ -1,9 +1,14 @@
 import ast
 
+try:
+    from importlib.metadata import version
+except ImportError:
+    from importlib_metadata import version
+
 
 class RaiseStatementChecker:
     name = "flake8-raise"
-    version = "0.0.4"
+    version = version("flake8-raise")
     text = {
         "R100": "R100 raise in except handler without from",
         "R101": "R101 use bare raise in except handler",

@@ -9,6 +9,8 @@ UNRELEASED
   source distribution.
 - Improved "R101 Use bare raise in except handler" for Python 3 nested
   ``except`` handlers.
+- Changed version string use ``importlib.metadata``. Requires the dependency on
+  importlib-metadata for Python < 3.8.
 
 0.0.4 (2020-01-19)
 ------------------

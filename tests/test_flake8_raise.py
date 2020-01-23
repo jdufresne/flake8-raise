@@ -1,3 +1,4 @@
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -28,3 +29,13 @@ def test_checks(path):
     except FileNotFoundError:
         expected = b""
     assert result.stdout == expected
+
+
+def test_version():
+    result = subprocess.run(
+        [sys.executable, "-m", "flake8", "--version"],
+        cwd=str(DATADIR),
+        stdout=subprocess.PIPE,
+        check=True,
+    )
+    assert re.search(rb"flake8-raise: [0-9]+\.[0-9]+\.[0-9]+", result.stdout)
