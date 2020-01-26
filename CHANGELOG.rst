@@ -2,10 +2,10 @@
 Changelog
 =========
 
-UNRELEASED
-----------
+0.0.5 (2020-01-26)
+------------------
 
-- Include ``CHANGELOG.rst``, ``LICENSE``, ``tox.ini``, and ``tests`` in the
+- Now include ``CHANGELOG.rst``, ``LICENSE``, ``tox.ini``, and ``tests`` in the
   source distribution.
 - Improved "R101 Use bare raise in except handler" for Python 3 nested
   ``except`` handlers.
